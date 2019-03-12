@@ -6,6 +6,19 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+    <style>
+        #menu a { text-decoration: none; color: black; }
+        #menu span { padding: 5px; border: 1px solid black; }
+    </style>
+
+        <div id="menu">
+            <a href="/candidature/list"><span>Candidatures</span></a>
+            <a href="/competence/list"><span>Compétences</span></a>
+            <a href="/contrat/list"><span>Contrats</span></a>
+            <a href="/job/list"><span>Jobs</span></a>
+            <a href="/offre/list"><span>Offres</span></a>
+        </div>
+
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
